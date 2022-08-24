@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Familiares</title>
 </head>
 <body>
-    <h1>aaaa familia</h1>
-    {{ familiar_1.nombre }}
+    <style>
+
+        body{
+            background-color: rgb(31, 32, 35);
+        }
+
+        h1{
+            color: rgb(255, 255, 255);
+            font-size: 65px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            letter-spacing: 5px;
+            padding-bottom: 75px;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 50px;
+            padding-bottom: 30px;
+        }
+
+        .apellido{
+            color: rgb(229,248,118);
+        }
+
+        ol li{
+            list-style-type: none;
+            padding-bottom: 20px;
+        }
+
+        div {
+        display: inline;
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 50px;
+        }
+
+
+    </style>
+
+    <h1>Familia Salazar</h1>
+
+    <h2>
+        Integrantes:
+    </h2>
+
+    <ol>
+       <li>
+        <div>{{ familiar_1.nombre }} <span class="apellido">{{ familiar_1.apellido }}</span> de {{ familiar_1.edad }} años nació el {{ familiar_1.fecha_nacimiento }}, es el hermano menor</div>
+       </li>
+
+       <li>
+        <div>{{ familiar_2.nombre }} <span class="apellido">{{ familiar_2.apellido }}</span> de {{ familiar_2.edad }} años nació el {{ familiar_2.fecha_nacimiento }}, es la hermana mayor</div>
+       </li>
+
+       <li>
+        <div>{{ familiar_3.nombre }} <span class="apellido">{{ familiar_3.apellido }}</span> de {{ familiar_3.edad }} años nació el {{ familiar_3.fecha_nacimiento }}, es el papá</div>
+       </li>
+
+       <li>
+        <div>{{ familiar_4.nombre }} <span class="apellido">{{ familiar_4.apellido }}</span> de {{ familiar_4.edad }} años nació el {{ familiar_4.fecha_nacimiento }}, es la mamá</div>
+       </li>
+    </ol>
+
 </body>
 </html>
