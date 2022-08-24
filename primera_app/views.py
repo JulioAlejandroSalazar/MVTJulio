@@ -11,10 +11,10 @@ def familiar(request):
     familiar_3 = Familia(nombre = "Julio", apellido = "Salazar", edad = "50", fecha_nacimiento = "1972-12-23")
     familiar_4 = Familia(nombre = "Mercedes", apellido = "Salazar", edad = "48", fecha_nacimiento = "1974-11-17")
 
-    # familiar_1.save()
-    # familiar_2.save()
-    # familiar_3.save()
-    # familiar_4.save()
+    familiar_1.save()
+    familiar_2.save()
+    familiar_3.save()
+    familiar_4.save()
 
     diccionario = {
         "familiar_1" : familiar_1,
@@ -33,9 +33,9 @@ def animal(request):
     animal_2 = Animal(nombre = "colibri", habitad = "selvas", esperanza_vida = "10", puede_volar = True)
     animal_3 = Animal(nombre = "pato", habitad = "lagos", esperanza_vida = "15", puede_volar = True)
 
-    # animal_1.save()
-    # animal_2.save()
-    # animal_3.save()
+    animal_1.save()
+    animal_2.save()
+    animal_3.save()
 
     diccionario = {
         "animal_1" : animal_1,
