@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+</head>
+<body>
+    <style>
+
+        body{
+            background-color: rgb(31, 32, 35);
+        }
+
+        h1{
+            color: rgb(255, 255, 255);
+            font-size: 65px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            letter-spacing: 5px;
+            padding-bottom: 75px;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 50px;
+            padding-bottom: 30px;
+        }
+
+        .vuela{
+            color: rgb(229,248,118);
+            font-weight: bold;
+        }
+
+        ol li{
+            list-style-type: none;
+            padding-bottom: 20px;
+        }
+
+        div {
+        display: inline;
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 50px;
+        }
+
+
+    </style>
+
+    <h1>Animales</h1>
+
+    <h2>
+        Listado de animales:
+    </h2>
+
+    <ol>
+       <li>
+        <div> El {{ animal_1.nombre }} tiene una esperanza de vida de {{ animal_1.esperanza_vida }} años, su habitad natural es en {{ animal_1.habitad }}. 
+        {% if animal_1.puede_volar == True %}
+            <span class="vuela"> Si </span>
+        {% else %}
+            <span class="vuela"> No </span>
+        {% endif %}
+        tiene capacidad para volar
+        </div>
+       </li>
+
+       <li>
+        <div> El {{ animal_2.nombre }} tiene una esperanza de vida de {{ animal_2.esperanza_vida }} años, su habitad natural es en {{ animal_2.habitad }}. 
+        {% if animal_2.puede_volar == True %}
+            <span class="vuela"> Si </span>
+        {% else %}
+            <span class="vuela"> No </span>
+        {% endif %}
+        tiene capacidad para volar
+        </div>
+       </li>
+
+       <li>
+        <div> El {{ animal_3.nombre }} tiene una esperanza de vida de {{ animal_3.esperanza_vida }} años, su habitad natural es en {{ animal_3.habitad }}. 
+        {% if animal_3.puede_volar == True %}
+            <span class="vuela"> Si </span>
+        {% else %}
+            <span class="vuela"> No </span>
+        {% endif %}
+        tiene capacidad para volar
+        </div>
+       </li>
+    </ol>
+
+</body>
+</html>

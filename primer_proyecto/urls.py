@@ -20,4 +20,5 @@ from primera_app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familiar/', familiar),
+    path('animal/', animal),
 ]
