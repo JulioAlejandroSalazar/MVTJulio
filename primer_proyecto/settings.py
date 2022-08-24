@@ -55,7 +55,7 @@ ROOT_URLCONF = 'primer_proyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/User/Documents/Curso Coderhouse Python/Desafios Verdes/MVTJulio/primer_proyecto/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
